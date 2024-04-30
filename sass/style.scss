@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Space Mono";
+    src: url("assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("assets/fonts/SpaceMono-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url("assets/fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Space Mono";
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+    .logo {
+        .logo-nm {
+            width: 216px;
+            margin-left: 140px;
+            margin-top: 30px;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 45px;
+        margin-right: 140px;
+        margin-top: 30px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+        
+            &:visited {
+                color: black;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    text-transform: uppercase;
+    gap: 86px;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:visited {
+            color: black;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}

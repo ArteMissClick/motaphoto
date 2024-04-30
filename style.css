@@ -1,10 +1,72 @@
-/*
-Theme Name: MotaPhoto
-Theme URI: https://www.motaphoto.com
-Author: Robin Micalaudie
-Author URI: https://openclassrooms.com
-Description: Thème pour le site Mota Photo
-Version: 1.0
-Tags: openclassrooms, motaphoto, projet11
-Text Domain: motaphoto
-*/
+@font-face {
+  font-family: "Space Mono";
+  src: url("assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("assets/fonts/SpaceMono-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("assets/fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+}
+body {
+  font-family: "Space Mono";
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+header .logo .logo-nm {
+  width: 216px;
+  margin-left: 140px;
+  margin-top: 30px;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 45px;
+  margin-right: 140px;
+  margin-top: 30px;
+}
+header ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header ul a:visited {
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  text-transform: uppercase;
+  gap: 86px;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:visited {
+  color: black;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
