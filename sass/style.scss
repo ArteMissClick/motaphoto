@@ -26,10 +26,19 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
 body {
     font-family: "Space Mono";
     margin: 0;
 }
+
+// Header
 
 header {
     display: flex;
@@ -54,6 +63,7 @@ header {
         a {
             text-decoration: none;
             text-transform: uppercase;
+            cursor: pointer;
         
             &:visited {
                 color: black;
@@ -61,6 +71,8 @@ header {
         }
     }
 }
+
+// Footer
 
 footer {
     display: flex;
@@ -81,5 +93,76 @@ footer {
 
     p {
         margin: 0;
+    }
+}
+
+// Modale
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 4px solid black;
+        width: 600px; /* Could be more or less, depending on screen size */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .contact-title {
+            align-self: center;
+            width: 886px;
+        }
+
+        .champs-modale {
+            border: 1px solid #B8BBC2;
+            border-radius: 8px;
+        }
+
+        .champs-modale-1 {
+            height: 40px;
+            width: 257px;
+        }
+
+        .champs-modale-2 {
+            width: 257px;
+        }
+    }
+}
+
+#wpcf7-f14-o1 {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Poppins";
+
+        p {
+            width: 269px;
+
+            .has-spinner {
+                border: none;
+                background-color: #D8D8D8;
+                padding: 0;
+                height: 50px;
+                width: 263px;
+            }
+        }
     }
 }

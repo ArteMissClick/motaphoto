@@ -1,3 +1,4 @@
+    <?php get_template_part( 'templates_part/modale' ); ?>
     <footer>
         <a href="#">Mentions Légales</a>
         <a href="#">Vie Privée</a>

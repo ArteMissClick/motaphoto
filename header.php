@@ -6,7 +6,7 @@
     <title>Mota Photo</title>
     <?php wp_head() ?>
 </head>
-<body>
+<body class="body-all">
     <header>
         <div class="logo">
             <img class="logo-nm" src="<?php echo get_template_directory_uri() . './assets/images/logo-nathalie-mota.png'?>" alt="Logo du site de Nathalie Mota">
