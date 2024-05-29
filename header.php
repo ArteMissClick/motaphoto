@@ -7,17 +7,18 @@
     <?php wp_head() ?>
 </head>
 <body class="body-all">
-    <header>
-        <div class="logo">
-            <img class="logo-nm" src="<?php echo get_template_directory_uri() . './assets/images/logo-nathalie-mota.png'?>" alt="Logo du site de Nathalie Mota">
-        </div>
-        <?php 
-            wp_nav_menu( 
-                array( 
-                    'theme_location' => 'main', 
-                    'container' => 'ul', // afin d'éviter d'avoir une div autour 
-                    'menu_class' => 'header-menu', // ma classe personnalisée 
-                ) 
-            ); 
-        ?>
-    </header>
+    <div class="max-wid">
+        <header>
+            <a href="<?php echo get_template_directory_uri() . 'index.php'?>" class="logo">
+                <img class="logo-nm" src="<?php echo get_template_directory_uri() . './assets/images/logo-nathalie-mota.png'?>" alt="Logo du site de Nathalie Mota">
+            </a>
+            <?php 
+                wp_nav_menu( 
+                    array( 
+                        'theme_location' => 'main', 
+                        'container' => 'ul', // afin d'éviter d'avoir une div autour 
+                        'menu_class' => 'header-menu', // ma classe personnalisée 
+                    )
+                );
+            ?>
+        </header>
