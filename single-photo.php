@@ -58,12 +58,14 @@
                     $next_photo = get_field('photo-unique', $next_post_id);
                 ?>
 
-                    <?php if ($prev_photo) : ?>
-                        <img class="photo-prev" src="<?php echo esc_url($prev_photo); ?>" alt="Photo précédente">
-                    <?php endif; ?>
-                    <?php if ($next_photo) : ?>
-                        <img class="photo-next" src="<?php echo esc_url($next_photo); ?>" alt="Photo suivante">
-                    <?php endif; ?>
+                    <div class="photos-arrow">
+                        <?php if ($prev_photo) : ?>
+                            <img class="photo-prev" src="<?php echo esc_url($prev_photo); ?>" alt="Photo précédente">
+                        <?php endif; ?>
+                        <?php if ($next_photo) : ?>
+                            <img class="photo-next" src="<?php echo esc_url($next_photo); ?>" alt="Photo suivante">
+                        <?php endif; ?>
+                    </div>
 
                     <div class="arrows arrows-alone">
                         <a href="<?php echo get_permalink($prev_post_id); ?>" class="arrow-left">

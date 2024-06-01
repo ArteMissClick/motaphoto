@@ -11,7 +11,7 @@
     <div class="all-main">
         <div class="filters">
             <div class="first-filters">
-                <select class="category-filter" id="category-filter">
+                <select class="category-filter filter-select" id="category-filter">
                     <option value="">Catégories</option>
                     <?php
                     $categories = get_terms(array(
@@ -28,7 +28,7 @@
                     ?>
                 </select>
 
-                <select class="format-filter" id="format-filter">
+                <select class="format-filter filter-select" id="format-filter">
                     <option value="">Formats</option>
                     <?php
                     $formats = get_terms(array(
@@ -46,8 +46,8 @@
                 </select>
             </div>
 
-            <select class="sort-filter" id="sort-filter">
-                <option value="">Ordre</option>
+            <select class="sort-filter filter-select" id="sort-filter">
+                <option value="">Trier par</option>
                 <option value="date_desc">A partir des plus récentes</option>
                 <option value="date_asc">A partir des plus anciennes</option>
             </select>

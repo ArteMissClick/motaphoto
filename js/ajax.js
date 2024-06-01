@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
-    var page = 2; // Initialize to 1 since we're now starting from the first page
-    var isLoading = false; // Flag to prevent duplicate requests
+    let page = 2; // Initialize to 2 since we're now starting from the second page
+    let isLoading = false; // Flag to prevent duplicate requests
 
     // Define loadPhotos globally
     window.loadPhotos = function(reset = false) {
@@ -47,6 +47,7 @@ jQuery(document).ready(function($) {
                 console.log('Next page will be:', page); // Log the next page number
 
                 initLightbox(); // Recollect photos and reattach events
+                attachEyesClickEvent(); // Reattach events for .eyes
             }
         });
     };
@@ -60,4 +61,15 @@ jQuery(document).ready(function($) {
         console.log('Load more button clicked'); // Log the click event
         loadPhotos();
     });
+
+    // Function to attach click events to .eyes
+    function attachEyesClickEvent() {
+        $('.eyes').off('click').on('click', function() {
+            const postUrl = $(this).data('url');
+            window.location.href = postUrl;
+        });
+    }
+
+    // Initial call to attach click events
+    attachEyesClickEvent();
 });
