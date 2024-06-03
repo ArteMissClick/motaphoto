@@ -226,8 +226,5 @@ document.addEventListener('DOMContentLoaded', function () {
             openBtn.removeClass("close-open").addClass("open-open");
             bodyAll.removeClass("no-scroll")
         }
-
-
-
     });
 });

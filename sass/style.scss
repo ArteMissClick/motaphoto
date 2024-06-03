@@ -51,9 +51,7 @@ body {
     max-width: 1440px;
     width: 1440px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
 // Header
@@ -105,10 +103,6 @@ header {
     .close-btn {
         display: none;
     }
-
-    // .open-open {
-    //     display: none;
-    // }
 }
 
 // Footer
