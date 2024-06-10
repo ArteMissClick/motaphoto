@@ -12,7 +12,7 @@
                 <p class="desc-item">Année : <?php the_terms(get_the_ID(), 'date'); ?></p>
             </div>
             <div class="photo-picture">
-                <img class="img-photo" src="<?php the_field('photo-unique'); ?>" alt="Team Mariée">
+                <img class="img-photo" src="<?php the_field('photo-unique'); ?>" alt="">
             </div>
         </div>
         <div class="photo-bottom">
@@ -22,17 +22,17 @@
             </div>
             <div class="photo-btm-right">
                 <?php
-                // Récupérer tous les posts de type 'photo' ordonnés par la taxonomie 'date'
+                // Récupérer tous les posts de type 'photo' ordonnés par une taxonomie personnalisée 'date'
                 $args = array(
-                    'post_type' => 'photo',
-                    'posts_per_page' => -1,
-                    'orderby' => 'date',  // Change to 'tax_query' if you mean a custom taxonomy
-                    'order' => 'ASC',
-                    'tax_query' => array(
+                    'post_type' => 'photo',  // Type de post 'photo'
+                    'posts_per_page' => -1,  // Nombre de posts par page (-1 pour tous les posts)
+                    'orderby' => 'tax_query',  // Utiliser 'tax_query' pour ordonner par taxonomie personnalisée
+                    'order' => 'ASC',  // Ordre ascendant
+                    'tax_query' => array(  // Query de taxonomie
                         array(
-                            'taxonomy' => 'date',
-                            'field'    => 'term_id',
-                            'terms'    => get_terms(array('taxonomy' => 'date', 'fields' => 'ids')),
+                            'taxonomy' => 'date',  // Nom de la taxonomie personnalisée 'date'
+                            'field'    => 'term_id',  // Champ utilisé pour la query (ici 'term_id')
+                            'terms'    => get_terms(array('taxonomy' => 'date', 'fields' => 'ids')),  // Termes de la taxonomie 'date'
                         ),
                     ),
                 );

@@ -12,7 +12,7 @@
     <div class="max-wid">
         <header>
             <a href="<?php echo home_url(); ?>" class="logo">
-                <img class="logo-nm" src="<?php echo get_template_directory_uri() . './assets/images/logo-nathalie-mota.png'?>" alt="Logo du site de Nathalie Mota">
+                <img class="logo-nm" src="<?php echo get_template_directory_uri() . '/assets/images/logo-nathalie-mota.png'?>" alt="Logo du site de Nathalie Mota">
             </a>
             <?php 
                 wp_nav_menu( 

@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
+        // Hover Photo
+
         function initSinglePhotoHoverEffects() {
             const arrowRight = $(".arrow-right");
             const arrowLeft = $(".arrow-left");
@@ -226,8 +228,5 @@ document.addEventListener('DOMContentLoaded', function () {
             openBtn.removeClass("close-open").addClass("open-open");
             bodyAll.removeClass("no-scroll")
         }
-
-
-
     });
 });
